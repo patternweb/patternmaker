@@ -15,9 +15,9 @@ it("can form a basic pattern", () => {
         name: "person"
       },
       {
-        name: "$$115",
+        name: "$$121",
         component: "greet",
-        inputs: ["$$99", "hi"]
+        inputs: ["$$104", "hi"]
       }
     ]
   };

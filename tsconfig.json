@@ -16,5 +16,5 @@
     "lib": ["dom", "es2015", "es2017"]
   },
   "exclude": ["dist/**/*", "node_modules/**/*", "tmp/**/*", "support/tests/fixtures/**/*"],
-  "typeRoots": ["./node_modules/@types", "./src/typings"]
+  "typeRoots": ["./node_modules/@types"]
 }
