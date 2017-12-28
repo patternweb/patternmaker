@@ -1,8 +1,9 @@
-import PatternMaker from "../index";
-import { loadFixture } from "./utils";
+import PatternMaker from "../../index";
+import { loadFixture } from "../utils";
 
 it("parses a basic function", () => {
-  const subject = new PatternMaker(loadFixture("function")).parse().components;
+  const subject = new PatternMaker(loadFixture("functions/function")).parse()
+    .components;
 
   const result = {
     add: {
