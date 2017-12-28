@@ -103,7 +103,7 @@ export default class PatternMaker {
         return parseFloat(arg.getText());
       case "Identifier":
         if (includeAliases) {
-          console.log(arg);
+          // console.log(arg);
           // return [ALIAS_PREFIX, arg.getText()].join("");
           return [ALIAS_PREFIX, arg.flowNode.node.pos].join("");
         } else {

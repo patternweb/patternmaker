@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "declaration": false,
+    "allowJs": false,
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "module": "es2015",
@@ -13,8 +13,9 @@
     "noUnusedParameters": false,
     "sourceMap": true,
     "target": "es2015",
-    "lib": ["dom", "es2015", "es2017"]
+    "lib": ["dom", "es2015", "es2017"],
+    "outDir": "lib"
   },
-  "exclude": ["dist/**/*", "node_modules/**/*", "tmp/**/*", "support/tests/fixtures/**/*"],
+  "exclude": ["tmp/**/*", "support/**/*", "src/tests"],
   "typeRoots": ["./node_modules/@types"]
 }
