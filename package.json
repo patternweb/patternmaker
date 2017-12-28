@@ -1,0 +1,39 @@
+{
+  "name": "patternmaker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "prettier --write \"{public,src}/**/*.{ts,tsx,js,jsx,json,css}\""
+  },
+  "keywords": [
+    "patternweb"
+  ],
+  "author": "John Rees <john@bitsushi.com>",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@types/jest": "^21.1.10",
+    "@types/node": "^8.5.2",
+    "jest": "^22.0.4",
+    "prettier": "^1.9.2",
+    "ts-jest": "^22.0.0"
+  },
+  "dependencies": {
+    "typescript": "^2.6.2"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/support/tests/jest_shim.js"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
+  }
+}
